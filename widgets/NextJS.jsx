@@ -1,4 +1,4 @@
-const externalAppUrl = "http://localhost:3000/near";
+const externalAppUrl = "http://localhost:3000/";
 const path = props.path;
 const initialViewHeight = 809;
 const initialPayload = {
