@@ -1,7 +1,7 @@
 'use client';
 
-import DashBoardHeader from '@/components/dashboard-header';
-import DashboardSideBar from '@/components/dashboard-sidebar';
+import DashBoardHeader from '@app/components/dashboard-header';
+import DashboardSideBar from '@app/components/dashboard-sidebar';
 import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 
 export default function DashBoard() {

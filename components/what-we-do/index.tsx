@@ -1,5 +1,5 @@
-import Food from '@/images/png/food.png';
-import Exercise from '@/images/png/excercise.png';
+import Food from '@app/images/png/food.png';
+import Exercise from '@app/images/png/excercise.png';
 import Image from 'next/image';
 
 const WhatWeDo = () => {

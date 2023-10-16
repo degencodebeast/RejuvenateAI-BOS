@@ -1,4 +1,4 @@
-import Workwithus from '@/images/png/work-with-us.png';
+import Workwithus from '@app/images/png/work-with-us.png';
 import Image from 'next/image';
 
 const WorkWithUs = () => {

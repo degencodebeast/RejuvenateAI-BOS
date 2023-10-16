@@ -1,7 +1,7 @@
 'use client';
 
-import Icon from '@/components/Icon';
-import Header from '@/components/header';
+import Icon from '@app/components/Icon';
+import Header from '@app/components/header';
 import {
   useToast,
   Avatar,

@@ -1,6 +1,6 @@
 'use client';
 
-import DashboardSideBar from '@/components/dashboard-sidebar';
+import DashboardSideBar from '@app/components/dashboard-sidebar';
 import { Box } from '@chakra-ui/react';
 
 export default function DashBoard() {

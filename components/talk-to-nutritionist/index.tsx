@@ -1,4 +1,4 @@
-import Nutritionist from '@/images/png/nutitionist.png';
+import Nutritionist from '@app/images/png/nutitionist.png';
 import Image from 'next/image';
 import { Button } from '@chakra-ui/react';
 const TalkToNutritionist = () => {

@@ -1,7 +1,7 @@
 'use client';
 
-import Icon from '@/components/Icon';
-import DashboardSideBar from '@/components/dashboard-sidebar';
+import Icon from '@app/components/Icon';
+import DashboardSideBar from '@app/components/dashboard-sidebar';
 import { Link } from '@chakra-ui/next-js';
 import {
   Td,

@@ -1,8 +1,8 @@
 'use client';
 
-import Icon from '@/components/Icon';
-import CustomHuddle from '@/components/custom-huddle';
-import DashboardSideBar from '@/components/dashboard-sidebar';
+import Icon from '@app/components/Icon';
+import CustomHuddle from '@app/components/custom-huddle';
+import DashboardSideBar from '@app/components/dashboard-sidebar';
 import {
   Td,
   Box,

@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { Link } from "@chakra-ui/next-js";
 import { useAccount } from "wagmi";
 import RejuvenateAi from "../../images/svg/rejuvenate-logo.svg";
-import { useAppContext } from "@/context/state";
+import { useAppContext } from "@app/context/state";
 import RegisterForm from "../register-form";
 import {
   ConnectKitButton,

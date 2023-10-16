@@ -1,4 +1,4 @@
-import QuoteSvg from '@/images/svg/quote.svg';
+import QuoteSvg from '@app/images/svg/quote.svg';
 
 const CTA = () => {
   return (

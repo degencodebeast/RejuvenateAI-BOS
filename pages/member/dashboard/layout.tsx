@@ -1,6 +1,6 @@
 'use client';
-import DashBoardHeader from '@/components/dashboard-header';
-import DashboardSideBar from '@/components/dashboard-sidebar';
+import DashBoardHeader from '@app/components/dashboard-header';
+import DashboardSideBar from '@app/components/dashboard-sidebar';
 import { ReactNode } from 'react';
 
 export default function DashBoardLayout({ children }: { children: ReactNode }) {

@@ -1,6 +1,6 @@
 'use client';
 
-import DashboardSideBar from '@/components/dashboard-sidebar';
+import DashboardSideBar from '@app/components/dashboard-sidebar';
 import {
   Td,
   Box,
