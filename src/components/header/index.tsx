@@ -7,7 +7,13 @@ import RejuvenateAi from '../../images/svg/rejuvenate-logo.svg';
 import { useAppContext } from '@/context/state';
 import RegisterForm from '../register-form';
 
-const Header = ({ bg = 'transparent' }: { bg?: string }) => {
+const Header = ({
+  bg = 'transparent',
+  navigator,
+}: {
+  bg?: string;
+  navigator: any;
+}) => {
   const { setAddress } = useAppContext();
   const [currentGreeting, setCurrentGreeting] = useState('loading...');
   const [greeting, setGreeting] = useState('Hello welcome');
@@ -29,7 +35,7 @@ const Header = ({ bg = 'transparent' }: { bg?: string }) => {
         </Link>
       </div>
       <>
-        {!auth.user ? (
+        {auth.user ? (
           <>
             <label
               className='btn bg-[#014421] h-[48px] px-5 lg:h-[50px] font-bold text-base lg:text-[20px] text-[#F5F5DC] rounded-xl'
@@ -49,7 +55,7 @@ const Header = ({ bg = 'transparent' }: { bg?: string }) => {
           </button>
         )}
       </>
-      <RegisterForm />
+      <RegisterForm navigator={navigator} />
     </section>
   );
 };
