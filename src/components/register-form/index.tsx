@@ -36,7 +36,7 @@ const RegisterForm = ({ navigation }: any) => {
 
   const onSubmit = async (data: any) => {
     //    const cid = await uploadPromptToIpfs(data);
-    window.location.href = '/member/dashboard';
+    router.push('/member/dashboard');
     //navigation.push("/member/dashboard");
   };
 
