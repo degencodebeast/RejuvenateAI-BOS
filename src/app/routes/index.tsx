@@ -8,7 +8,7 @@ import {
 } from 'near-social-bridge';
 
 import Home from '../page';
-import Profile from '../member/dashboard/page';
+import Profile from '../member/dashboard';
 
 const { Navigator, Screen } = createStackNavigator();
 
