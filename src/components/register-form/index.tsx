@@ -1,19 +1,17 @@
-"use client";
-import React from "react";
+'use client';
+import React from 'react';
 import { useRouter } from 'next/navigation';
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as Yup from "yup";
-import { uploadPromptToIpfs } from "@/helpers/prompt";
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as Yup from 'yup';
+import { uploadPromptToIpfs } from '@/helpers/prompt';
 //import { useAuth } from "near-social-bridge";
 
-
-
 const RegisterForm = ({ navigation }: any) => {
-    //const auth = useAuth()
-    const router = useRouter();
+  //const auth = useAuth()
+  const router = useRouter();
 
-     // form validation rules
+  // form validation rules
   const validationSchema = Yup.object().shape({
     fullName: Yup.string().required('Field is required'),
     sex: Yup.string().required('Field is required'),
@@ -36,10 +34,10 @@ const RegisterForm = ({ navigation }: any) => {
   const { register, handleSubmit, reset, formState } = useForm(formOptions);
   const { errors } = formState;
 
-  const onSubmit = async (data:any) => {
-//    const cid = await uploadPromptToIpfs(data);
-   router.push('/member/dashboard');
-   //navigation.push("/member/dashboard");
+  const onSubmit = async (data: any) => {
+    //    const cid = await uploadPromptToIpfs(data);
+    window.location.href = '/member/dashboard';
+    //navigation.push("/member/dashboard");
   };
 
   return (
