@@ -12,24 +12,22 @@ import Footer from '@/components/footer';
 import { NearSocialBridgeProvider, Spinner } from 'near-social-bridge';
 //import 'near-social-bridge/near-social-bridge.css';
 
-const App = () => {
+const App = ({ navigation }: any) => {
   return (
-   
-     <div className='bg-primaryBeige min-h-screen'>
-     <div className='px-4 lg:px-8 w-full'>
-       <Header />
-     </div>
-     <div className=' h-7 bg-[#EEC438]' />
-     <Hero />
-     <div className='px-4 lg:px-8'>
-       <WhatWeDo />
-     </div>
-     <WorkWithUs />
-     <TalkToNutritionist />
-     <CTA />
-     <Footer />
-   </div>
-   
+    <div className='bg-primaryBeige min-h-screen'>
+      <div className='px-4 lg:px-8 w-full'>
+        <Header navigator={navigation} />
+      </div>
+      <div className=' h-7 bg-[#EEC438]' />
+      <Hero />
+      <div className='px-4 lg:px-8'>
+        <WhatWeDo />
+      </div>
+      <WorkWithUs />
+      <TalkToNutritionist />
+      <CTA />
+      <Footer />
+    </div>
   );
 };
 

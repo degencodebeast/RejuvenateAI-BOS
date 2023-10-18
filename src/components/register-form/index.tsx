@@ -36,8 +36,8 @@ const RegisterForm = ({ navigation }: any) => {
 
   const onSubmit = async (data: any) => {
     //    const cid = await uploadPromptToIpfs(data);
-    router.push('/member/dashboard');
-    //navigation.push("/member/dashboard");
+    // router.push('/member/dashboard');
+    navigation.push('member');
   };
 
   return (
