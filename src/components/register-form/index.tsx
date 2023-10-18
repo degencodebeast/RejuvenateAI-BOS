@@ -5,9 +5,12 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import { uploadPromptToIpfs } from "@/helpers/prompt";
+//import { useAuth } from "near-social-bridge";
 
 
-const RegisterForm = () => {
+
+const RegisterForm = ({ navigation }: any) => {
+    //const auth = useAuth()
     const router = useRouter();
 
      // form validation rules
@@ -36,6 +39,7 @@ const RegisterForm = () => {
   const onSubmit = async (data:any) => {
 //    const cid = await uploadPromptToIpfs(data);
    router.push('/member/dashboard');
+   //navigation.push("/member/dashboard");
   };
 
   return (
