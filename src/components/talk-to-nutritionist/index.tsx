@@ -1,7 +1,14 @@
 import Nutritionist from '@/images/png/nutitionist.png';
 import Image from 'next/image';
 import { Button } from '@chakra-ui/react';
+import { useRouter } from 'next/router';
 const TalkToNutritionist = () => {
+  const router = useRouter();
+
+  const findOutMoreHandler = () => {
+    router.push('/nutritionists');
+  };
+
   return (
     <div className='w-full px-4 lg:px-8 text-[#3C4142]'>
       <section className='w-full flex flex-col-reverse gap-7 lg:flex-row py-20 max-w-[1074px] mx-auto items-center justify-between'>
@@ -21,7 +28,10 @@ const TalkToNutritionist = () => {
             nutritionist today and take that exciting step towards a healthier,
             more fulfilling life.
           </p>
-          <button className='bg-primaryGreen max-w-[220px] h-[48px] px-5 hover:bg-primaryYellow hover:text-primaryBeige lg:h-[59px] font-bold text-base lg:text-[20px] text-[#F5F5DC] rounded-xl'>
+          <button
+            onClick={findOutMoreHandler}
+            className='bg-primaryGreen max-w-[220px] h-[48px] px-5 hover:bg-primaryYellow hover:text-primaryBeige lg:h-[59px] font-bold text-base lg:text-[20px] text-[#F5F5DC] rounded-xl'
+          >
             Find out more
           </button>
           {/* <Button size={'lg'} variant={'solid'} className="bg-primaryGreen text-primaryBeige" rounded={'md'}>Find out more</Button> */}
