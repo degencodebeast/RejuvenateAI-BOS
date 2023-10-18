@@ -2,7 +2,7 @@
 
 import Icon from '@/components/Icon';
 import DashboardSideBar from '@/components/dashboard-sidebar';
-import { Link } from '@chakra-ui/next-js';
+import Link from 'next/link';
 import {
   Td,
   Box,

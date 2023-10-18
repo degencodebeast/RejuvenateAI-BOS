@@ -1,15 +1,15 @@
 import { Box, List, ListIcon, ListItem } from '@chakra-ui/react';
 import Icon from '../Icon';
-import { Link } from '@chakra-ui/next-js';
-import { usePathname } from 'next/navigation';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 // import { } from 'material-symbols'
 export default function DashboardSideBar(props: {
   entryPath?: string;
   links: Array<{ title: string; url: string; icon: string }>;
 }) {
-  const pathname = usePathname();
-  const parts = pathname.split('/');
+  const router = useRouter();
+  const parts = router.pathname.split('/');
   const lastPart = parts[parts.length - 1];
   const _links = props.links.map((link, i) => {
     const isActive =

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Link } from '@chakra-ui/next-js';
+import Link from 'next/link';
 import { useAuth } from 'near-social-bridge';
 import RejuvenateAi from '../../images/svg/rejuvenate-logo.svg';
 import { useAppContext } from '@/context/state';
@@ -24,7 +24,7 @@ const Header = ({ bg = 'transparent' }: { bg?: string }) => {
       className={`bg-${bg} px-2 max-w-[1300px] w-full py-1 flex justify-between items-center mx-auto`}
     >
       <div>
-        <Link href={'/'} textDecor={'none'}>
+        <Link href={'/'}>
           <RejuvenateAi />
         </Link>
       </div>

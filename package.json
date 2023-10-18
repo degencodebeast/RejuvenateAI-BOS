@@ -12,7 +12,6 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@chakra-ui/next-js": "^2.1.5",
     "@chakra-ui/react": "^2.8.1",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -38,7 +37,7 @@
     "lokijs": "1.x",
     "material-symbols": "^0.13.0",
     "near-social-bridge": "^1.7.1",
-    "next": "13.4.19",
+    "next": "12",
     "pino-pretty": "^10.2.3",
     "postcss": "8.4.29",
     "react": "18.2.0",
