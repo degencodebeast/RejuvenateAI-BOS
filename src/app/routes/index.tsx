@@ -7,8 +7,8 @@ import {
   useAuth,
 } from 'near-social-bridge';
 
-import Home from '../page';
-import Profile from '../member/dashboard/page';
+import Home from '..';
+import Profile from '../member/dashboard/index.tsx';
 
 const { Navigator, Screen } = createStackNavigator();
 
