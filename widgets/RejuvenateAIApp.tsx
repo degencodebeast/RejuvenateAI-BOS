@@ -1,8 +1,12 @@
 const externalAppUrl = 'http://localhost:3000';
+//const externalAppUrl = "https://rejuvenate-ai.netlify.app/"
+
+
 
 return (
   <Widget
-    src={'wendersonpires.testnet/widget/NearSocialBridgeCore'}
-    props={{ externalAppUrl }}
+    src={'wendersonpires.near/widget/NearSocialBridgeCore'}
+    props={{ externalAppUrl
+     }}
   />
 );
