@@ -1,4 +1,4 @@
-const externalAppUrl = 'http://localhost:3000/near';
+const externalAppUrl = 'http://localhost:3000/';
 //const externalAppUrl = "https://rejuvenate-ai.netlify.app/"
 
 return (

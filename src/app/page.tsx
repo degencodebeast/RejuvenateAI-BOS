@@ -14,6 +14,7 @@ import { NearSocialBridgeProvider, Spinner } from 'near-social-bridge';
 
 const App = ({ navigation }: any) => {
   return (
+    <NearSocialBridgeProvider>
     <div className='bg-primaryBeige min-h-screen'>
       <div className='px-4 lg:px-8 w-full'>
         <Header navigator={navigation} />
@@ -28,6 +29,7 @@ const App = ({ navigation }: any) => {
       <CTA />
       <Footer />
     </div>
+    </NearSocialBridgeProvider>
   );
 };
 

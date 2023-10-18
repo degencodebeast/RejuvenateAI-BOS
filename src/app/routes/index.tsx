@@ -27,7 +27,7 @@ const Routes = () => {
   console.log('Auth:', auth);
 
   return (
-    <Navigator>
+    <Navigator autoHeightSync>
       <Screen name='home' component={Home} />
       <Screen name='member' component={Profile} />
     </Navigator>
