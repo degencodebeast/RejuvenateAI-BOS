@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 
-// const nextConfig = {}
+const nextConfig = {
+	output: 'export',
+	images: {
+		unoptimized: true, // Add this line to disable image optimization
+	  },
+}
 module.exports = {
 	webpack(config) {
 		config.module.rules.push({
@@ -11,5 +16,5 @@ module.exports = {
 
 		return config
 	},
-	// {...nextConfig},
+	...nextConfig
 }
