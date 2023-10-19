@@ -19,12 +19,12 @@ We created and deployed our smart contracts on the Near Aurora EVM chain
 
 ### Aurora
 
-1. Community contract 0x6083A218DF607c21CdD9677eB247286CA73d146C - [View source code]() | [View on Aurora](https://explorer.testnet.aurora.dev/address/0x6083A218DF607c21CdD9677eB247286CA73d146C)
+1. Community contract 0x6083A218DF607c21CdD9677eB247286CA73d146C - [View source code](https://github.com/degencodebeast/RejuvenateAI-BOS/blob/main/hardhat/contracts/Community.sol) | [View on Aurora](https://explorer.testnet.aurora.dev/address/0x6083A218DF607c21CdD9677eB247286CA73d146C)
 
-2. Treasury contract 0xff4c759b5e2D4923Dde13071dc5677A02B6a8EC3 - [View source code]() | [View on Aurora](https://explorer.testnet.aurora.dev/address/0xff4c759b5e2D4923Dde13071dc5677A02B6a8EC3)
+2. Treasury contract 0xff4c759b5e2D4923Dde13071dc5677A02B6a8EC3 - [View source code](https://github.com/degencodebeast/RejuvenateAI-BOS/blob/main/hardhat/contracts/Treasury.sol) | [View on Aurora](https://explorer.testnet.aurora.dev/address/0xff4c759b5e2D4923Dde13071dc5677A02B6a8EC3)
 
-3. User NFT contract 0xCA836dA8ED627C21226e3B59a3a4F1942B2D1Cc2 - [View source code]() | [View on Aurora](https://explorer.testnet.aurora.dev/address/0xCA836dA8ED627C21226e3B59a3a4F1942B2D1Cc2)
+3. User NFT contract 0xCA836dA8ED627C21226e3B59a3a4F1942B2D1Cc2 - [View source code](https://github.com/degencodebeast/RejuvenateAI-BOS/blob/main/hardhat/contracts/UserNFT.sol) | [View on Aurora](https://explorer.testnet.aurora.dev/address/0xCA836dA8ED627C21226e3B59a3a4F1942B2D1Cc2)
 
-4. Nutritionist NFT contract 0x6e2C11794C29e544AF675e1C0AEcF48Ed299d821 - [View source code]() | [View on Aurora](https://explorer.testnet.aurora.dev/address/0x6e2C11794C29e544AF675e1C0AEcF48Ed299d821)
+4. Nutritionist NFT contract 0x6e2C11794C29e544AF675e1C0AEcF48Ed299d821 - [View source code](https://github.com/degencodebeast/RejuvenateAI-BOS/blob/main/hardhat/contracts/NutritionistNFT.sol) | [View on Aurora](https://explorer.testnet.aurora.dev/address/0x6e2C11794C29e544AF675e1C0AEcF48Ed299d821)
 
 
