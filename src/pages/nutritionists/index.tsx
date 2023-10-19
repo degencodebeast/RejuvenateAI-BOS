@@ -22,7 +22,8 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { format } from 'date-fns';
-import { useState } from 'react';
+import { useSyncContentHeight } from 'near-social-bridge';
+import { useEffect, useState } from 'react';
 //@ts-ignore
 import DatePicker from 'react-datepicker';
 type Nutritionist = {
@@ -72,6 +73,9 @@ const data: Nutritionist[] = [
 
 const sectionTimes = [30, 45, 60, 90, 120];
 export default function NutritionistPage() {
+  // Update the VM iframe's hight container
+  useSyncContentHeight();
+
   const toast = useToast({
     duration: 3000,
     position: 'top',
@@ -115,7 +119,7 @@ export default function NutritionistPage() {
   return (
     <Box
       className='bg-primaryYellowTrans'
-      h={'100vh'}
+      // h={'100vh'}
       px={6}
       overflowY={'auto'}
       pb={12}
@@ -123,7 +127,7 @@ export default function NutritionistPage() {
       <Header bg='white' />
       <Box maxW={'1300'} mx={'auto'}>
         <Heading size={'lg'} my={4} bg={'white'} py={4} px={3} rounded={'md'}>
-          Find Nutritionist from around the world
+          Find Nutritionists from around the world
         </Heading>
         <Flex gap={6} wrap={'wrap'}>
           {data.map((p, i) => {

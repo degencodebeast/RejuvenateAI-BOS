@@ -15,7 +15,7 @@ export default function CustomHuddle({}) {
   useEffect(() => {
     // its preferable to use env vars to store projectId
     initialize(PROJECT_ID);
-  }, []);
+  }, [PROJECT_ID, initialize]);
   const createRoom = async () => {
     try {
       const { data } = await axios.get('/api/create-room');

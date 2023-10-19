@@ -1,13 +1,14 @@
 'use client';
-import React from 'react';
-import { useRouter } from 'next/navigation';
+import React, { useEffect } from 'react';
+//import { useRouter } from 'next/navigation';
+import { useRouter } from 'next/router';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as Yup from 'yup';
 import { uploadPromptToIpfs } from '@/helpers/prompt';
 //import { useAuth } from "near-social-bridge";
 
-const RegisterForm = ({ navigation }: any) => {
+const RegisterForm = () => {
   //const auth = useAuth()
   const router = useRouter();
 
@@ -36,8 +37,7 @@ const RegisterForm = ({ navigation }: any) => {
 
   const onSubmit = async (data: any) => {
     //    const cid = await uploadPromptToIpfs(data);
-    // router.push('/member/dashboard');
-    navigation.push('member');
+    router.push('/member/dashboard');
   };
 
   return (
@@ -77,8 +77,9 @@ const RegisterForm = ({ navigation }: any) => {
               className='select w-full max-w-[100%]'
               {...register('sex')}
               placeholder="What's your biological sex?"
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 What&apos;s your biological sex?
               </option>
               <option value='name'>Male</option>
@@ -107,8 +108,9 @@ const RegisterForm = ({ navigation }: any) => {
               className='select w-full max-w-[100%]'
               {...register('diet')}
               placeholder='Tell us about your diet?'
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 Tell us about your diet?
               </option>
               <option value='I eat 5 or more servings of vegetables per day'>
@@ -148,8 +150,9 @@ const RegisterForm = ({ navigation }: any) => {
             <select
               {...register('active')}
               className='select w-full max-w-[100%]'
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 How active are you on an average week?
               </option>
               <option value='inactive'>inactive</option>
@@ -162,8 +165,9 @@ const RegisterForm = ({ navigation }: any) => {
             <select
               {...register('sitting')}
               className='select w-full max-w-[100%]'
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 How many hours a day are you sitting
               </option>
               {[
@@ -181,8 +185,9 @@ const RegisterForm = ({ navigation }: any) => {
             <select
               {...register('alcohol')}
               className='select w-full max-w-[100%]'
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 How much alcohol do you drink
               </option>
               <option value='0 - 10 drinks a week'>0 - 10 drinks a week</option>
@@ -199,8 +204,9 @@ const RegisterForm = ({ navigation }: any) => {
             <select
               {...register('smoke')}
               className='select w-full max-w-[100%]'
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 Do you smoke?
               </option>
               <option value='Never smoked'>Never smoked</option>
@@ -213,8 +219,9 @@ const RegisterForm = ({ navigation }: any) => {
             <select
               {...register('smokingStopped')}
               className='select w-full max-w-[100%]'
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 If you are an ex-smoker, how many months ago did you stop?
               </option>
               <option value='less than 6 months ago'>
@@ -232,8 +239,9 @@ const RegisterForm = ({ navigation }: any) => {
             <select
               {...register('smokingLength')}
               className='select w-full max-w-[100%]'
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 If you are a current smoker, how many cigarettes do you smoke
                 per day?
               </option>
@@ -249,8 +257,9 @@ const RegisterForm = ({ navigation }: any) => {
             <select
               {...register('sleepLength')}
               className='select w-full max-w-[100%]'
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 How mamy hours of sleep do you get per day?
               </option>
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item) => (
@@ -265,8 +274,9 @@ const RegisterForm = ({ navigation }: any) => {
             <select
               {...register('overallHealth')}
               className='select w-full max-w-[100%]'
+              defaultValue=''
             >
-              <option value='' disabled selected>
+              <option value='' disabled>
                 Rate your overall Health
               </option>
               <option value='Excellent'>Excellent</option>
@@ -278,7 +288,7 @@ const RegisterForm = ({ navigation }: any) => {
             <div className='text-red-200'>{errors.overallHealth?.message}</div>
           </div>
           <div className='flex'>
-            <button
+            <button onClick={onSubmit}
               type='submit'
               className='btn w-full max-w-[100%] flex items-center bg-[#014421] h-[48px] px-5 lg:h-[50px] font-bold text-base lg:text-[20px] text-[#F5F5DC] rounded-xl'
             >
